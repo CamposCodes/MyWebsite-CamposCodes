@@ -3,7 +3,6 @@ import {MdMenu,MdClose} from 'react-icons/md';
 import React, {useState} from 'react';
 import { motion } from 'framer-motion';
 import LogoImage1 from '../../assets/1.png';
-import LogoImage2 from '../../assets/2.png';
 
 
 const Navbar = () => {

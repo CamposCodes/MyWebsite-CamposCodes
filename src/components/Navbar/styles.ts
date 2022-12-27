@@ -8,27 +8,29 @@ export const NavbarContainer = styled.nav`
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-
-
+    
+    
     @media(min-width: 700px){
+        border: solid 1px var(--color2);
+        border-width: 0px 0px 1px 0px;
         height: 80px;
     }
-`;
+    `;
 
 export const NavbarInnerContainer = styled.div`
     width: 100%;
     height: 4rem;
     display: flex;
     background: var(--color5);
-`; 
+    `; 
 export const NavbarExtendedContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
-
+    
     @media (min-width: 700px){
-    display: none;
+        display: none;
     }
 `; 
 
