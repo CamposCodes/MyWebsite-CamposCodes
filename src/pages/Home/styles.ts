@@ -23,6 +23,7 @@ export const TextArea = styled.div`
     width: 100%;
     height: auto;
     margin: .5rem 0;
+    margin-top: 2rem;
 `;
 
 export const Text = styled.p`

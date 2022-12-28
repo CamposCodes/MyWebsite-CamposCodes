@@ -7,28 +7,26 @@ export const NavbarContainer = styled.nav`
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    margin-top: 2rem;
     justify-content: space-around;
     height: ${props => props.extendNavbar ? "100vh" : "5vh"};
     
-    @media(min-width: 700px){
-        border: solid 1px var(--color2);
-        border-width: 0px 0px 1px 0px;
-    }
-    `;
+`;
 
 export const NavbarInnerContainer = styled.div`
     width: 100%;
     height: 4rem;
     display: flex;
     background: var(--color5);
-    `; 
+    margin-bottom: 2rem;
+`; 
 export const NavbarExtendedContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 2rem;
     height: 100vh;
-    
+    margin-bottom: 1rem;
+
     @media (min-width: 700px){
         display: none;
     }
@@ -43,23 +41,35 @@ export const LeftContainer = styled.div`
     @media (min-width: 700px){
         margin-right: .5rem;
     }
-`;
+    @media (max-width: 700px){
+        margin-top: 6rem;
+    }
+    `;
 
 export const RightContainer = styled.div`
     flex: 20%;
     display:flex;
     justify-content: flex-end;
-    margin-top: 2rem;
+    margin-top: 1.6rem;
     margin-right: 2rem;
     font-size: 2rem;
     letter-spacing: -1.5px;
-`;
+    @media (max-width: 700px){
+        display: none;
+        flex: 0%;
+    }
+    `;
 
 export const MidContainer = styled.div`
     flex: 60%;         
     justify-content: space-around;
     align-items: center;
-`;
+    
+    @media (max-width: 700px){
+        margin-top: 3.5rem;
+        margin-left: 10rem;
+    }
+    `;
 
 
 export const NavbarLinkContainer = styled.div`
