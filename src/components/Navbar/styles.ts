@@ -49,6 +49,10 @@ export const RightContainer = styled.div`
     flex: 20%;
     display:flex;
     justify-content: flex-end;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    font-size: 2rem;
+    letter-spacing: -1.5px;
 `;
 
 export const MidContainer = styled.div`
