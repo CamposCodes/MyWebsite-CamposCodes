@@ -8,13 +8,11 @@ export const NavbarContainer = styled.nav`
     flex-direction: column;
     margin-bottom: 2rem;
     justify-content: space-between;
-    height: ${props => props.extendNavbar ? "100vh" : "4rem"};
-    padding: 0;
+    height: ${props => props.extendNavbar ? "100vh" : "5vh"};
     
     @media(min-width: 700px){
         border: solid 1px var(--color2);
         border-width: 0px 0px 1px 0px;
-        height: 80px;
     }
     `;
 
@@ -29,7 +27,8 @@ export const NavbarExtendedContainer = styled.div`
     flex-direction: column;
     align-items: center;
     margin-top: 2rem;
-    
+    height: 100vh;
+
     @media (min-width: 700px){
         display: none;
     }
