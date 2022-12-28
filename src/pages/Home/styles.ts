@@ -22,6 +22,7 @@ export const TextArea = styled.div`
     border-radius: 1rem;
     width: 100%;
     height: auto;
+    margin: .5rem 0;
 `;
 
 export const Text = styled.p`
@@ -41,4 +42,5 @@ export const Image = styled.img`
     width: 10rem;
     height: 10rem;
     justify-content: flex-start;
+    margin: .5rem;
 `;

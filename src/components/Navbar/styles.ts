@@ -7,7 +7,7 @@ export const NavbarContainer = styled.nav`
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-    justify-content: space-between;
+    justify-content: space-around;
     height: ${props => props.extendNavbar ? "100vh" : "5vh"};
     
     @media(min-width: 700px){
@@ -28,25 +28,33 @@ export const NavbarExtendedContainer = styled.div`
     align-items: center;
     margin-top: 2rem;
     height: 100vh;
-
+    
     @media (min-width: 700px){
         display: none;
     }
-    `; 
+`; 
 
 export const LeftContainer = styled.div`
-    flex: 80%;         
+    flex: 10%;         
     display:flex;
     align-items: center;
-    `;
+    margin-top: 2rem;
+
+    @media (min-width: 700px){
+        margin-right: .5rem;
+    }
+`;
+
 export const RightContainer = styled.div`
     flex: 20%;
     display:flex;
     justify-content: flex-end;
-    
-    @media (min-width: 700px){
-        margin-right: .5rem;
-    }
+`;
+
+export const MidContainer = styled.div`
+    flex: 60%;         
+    justify-content: space-around;
+    align-items: center;
 `;
 
 
@@ -59,12 +67,14 @@ export const NavbarLink = styled(Link)`
     color: var(--color2);
     font-size: x-large;
     text-decoration: none;
-    margin: 2rem  1rem 1rem 1rem;
-
+    margin-left: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    
     @media (max-width: 700px){
-    display: none;
+        display: none;
     }
-
+    
     &:hover{
         color: var(--color3);
     }
@@ -74,10 +84,14 @@ export const NavbarLink = styled(Link)`
 export const Logo = styled.img`
     width: 5rem;
     height: 5rem;
-    margin: 0;
+    margin: 2rem;
+    background: var(--color4);
+    padding: .5rem;
+    border-radius: 0 0 50% 50%;
 
     @media (max-width: 700px){
         margin: .6rem 0;
+        margin-right: 2rem;
     }
 `;
 
@@ -90,6 +104,7 @@ export const OpenLinksButton = styled.button`
     font-size: 3rem;
     margin-top: 1rem;
     cursor: pointer;  
+    filter: drop-shadow(6px 0px 27px #000);
     
     @media (min-width: 700px){
     display: none;

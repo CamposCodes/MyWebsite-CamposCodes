@@ -30,6 +30,9 @@ const Navbar = () => {
         <C.NavbarContainer extendNavbar={extendNavbar}>
             <C.NavbarInnerContainer>
                 <C.LeftContainer>
+                    <C.Logo src={LogoImage1}></C.Logo>
+                </C.LeftContainer>
+                <C.MidContainer>
                     <C.NavbarLinkContainer>
                         <C.NavbarLink to="/">Home</C.NavbarLink>
                         <C.NavbarLink to="/projects">Projects</C.NavbarLink>
@@ -39,9 +42,8 @@ const Navbar = () => {
                             {extendNavbar ? <MdClose/> : <MdMenu />}    
                         </C.OpenLinksButton>
                     </C.NavbarLinkContainer>
-                </C.LeftContainer>
+                </C.MidContainer>
                 <C.RightContainer>
-                    <C.Logo src={LogoImage1}></C.Logo>
                 </C.RightContainer>
             </C.NavbarInnerContainer>
             {extendNavbar && (

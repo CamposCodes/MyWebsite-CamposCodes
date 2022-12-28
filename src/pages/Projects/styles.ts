@@ -11,8 +11,8 @@ export const ContainerGrid = styled.section`
 
     @media (max-width: 700px) {
         height: auto;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
     }
 `;
 export const Container = styled.section`
@@ -23,19 +23,20 @@ export const Container = styled.section`
     justify-content: center;
     align-items: center;
 
-    @media (min-width: 700px){
-        height: auto;
-    }
 `;
 export const ProjectArea = styled.div`
     background: var(--color4);
     border-radius: 1rem;
     justify-content: center;
     align-items: center;
-    margin: 0.5rem 0;
     width: 100%;
     height: 200px;
     object-fit: contain;
+    
+    @media (max-width: 700px) {
+        margin: auto 1rem auto 1rem;
+        width: 80%;
+    }
 `;
 
 export const ProjectLink = styled.a``;

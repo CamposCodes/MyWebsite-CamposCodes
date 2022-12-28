@@ -20,9 +20,11 @@ export const Area = styled.div`
         margin: 1rem .5rem;
         font-size: 2rem;
         color: var(--color2);
+        transition: .5s;
         
         &:hover{
             color: var(--color3);
+            transform: scale(1.50);
         }
     }
 `;
