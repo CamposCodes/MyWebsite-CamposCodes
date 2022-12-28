@@ -3,24 +3,18 @@ import image1 from '../../assets/1.png';
 
 const Home = () => {
 
-    return(
-        <C.Container>
-            <C.TextArea>
-                <C.Title>Quem eu sou?</C.Title>
-                <C.Text></C.Text>
-                <C.Image src={image1}></C.Image>
-            </C.TextArea>
-            <C.TextArea>
-                {/* <C.Title>Quem eu sou?</C.Title> */}
-                <C.Text></C.Text>
-                <C.Image src={image1}></C.Image>
-            </C.TextArea>
-            <C.TextArea>
-                {/* <C.Title>Quem eu sou?</C.Title> */}
-                <C.Text></C.Text>
-                <C.Image src={image1}></C.Image>
-            </C.TextArea>
-        </C.Container>
+    return (
+      <C.Container>
+        <C.Title>Quem eu sou?</C.Title>
+        <C.TextArea>
+          <C.Image src={image1}></C.Image>
+          <C.Text>
+            xxxxxxx xxxxxxxxxxxxxxxxx xxxxxx xx xxxxxxxx xxxx
+            xxxxxxxxxxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxx xxxxxxxxxxx x xxxxx xxxxxxxxxxx
+            xxxxxxx xxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxxx xxxxxxxxx xxx
+          </C.Text>
+        </C.TextArea>
+      </C.Container>
     );
 }
 

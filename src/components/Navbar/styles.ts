@@ -3,12 +3,13 @@ import {Link} from 'react-router-dom';
 
 export const NavbarContainer = styled.nav`
     width:100%;
-    height: ${props => props.extendNavbar ? "100vh" : "4rem"};
     background: var(--color5);
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-    
+    justify-content: space-between;
+    height: ${props => props.extendNavbar ? "100vh" : "4rem"};
+    padding: 0;
     
     @media(min-width: 700px){
         border: solid 1px var(--color2);
@@ -32,19 +33,21 @@ export const NavbarExtendedContainer = styled.div`
     @media (min-width: 700px){
         display: none;
     }
-`; 
+    `; 
 
 export const LeftContainer = styled.div`
     flex: 80%;         
     display:flex;
     align-items: center;
-    padding-left: 5%;
-`;
+    `;
 export const RightContainer = styled.div`
     flex: 20%;
     display:flex;
     justify-content: flex-end;
-    padding-right: 3rem;
+    
+    @media (min-width: 700px){
+        margin-right: .5rem;
+    }
 `;
 
 
