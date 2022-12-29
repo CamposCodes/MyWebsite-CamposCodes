@@ -2,8 +2,10 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     min-height: 100vh;
-    background: var(--color5);
+    background: var(--bg);
     color: var(--color2);
+    margin: 0;
+    padding: 0;
 `;
 
 export const Area = styled.div`

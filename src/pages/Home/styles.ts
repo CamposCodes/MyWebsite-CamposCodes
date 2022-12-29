@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.section`
     width: 95%;
@@ -18,8 +19,19 @@ export const Container = styled.section`
 export const TextArea = styled.div`
     display: flex;
     align-items: center;
-    background: var(--color4);
+    width: 100%;
+    height: auto;
+    margin: .5rem 0;
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0.24);
+    backdrop-filter: blur(15px) ;
+    -webkit-backdrop-filter: blur(15px) ;
+    box-shadow: 5px 3px 50px 3px #000;
     border-radius: 1rem;
+`;
+export const TextArea2 = styled.div`
+    display: flex;
+    align-items: center;
     width: 100%;
     height: auto;
     margin: .5rem 0;
@@ -31,6 +43,14 @@ export const Text = styled.p`
     text-align: start;
     margin: 0.5rem;
     font-size: 20px;
+    color: #fff;
+`;
+export const Text2 = styled.p`
+    width: 100%;
+    text-align: start;
+    margin: 0.5rem;
+    font-size: 20px;
+    color: #d5fafe;
 `;
 
 export const Title = styled.h2`
@@ -38,10 +58,66 @@ export const Title = styled.h2`
     font-weight: normal;
     width: 100%;
 `;
+export const SubTitle = styled.h2`
+    justify-content: center;
+    text-align: center;
+    font-weight: normal;
+    width: 100%;
+`;
 
 export const Image = styled.img`
-    width: 10rem;
-    height: 10rem;
+    width: 15rem;
+    height: 15rem;
     justify-content: flex-start;
+`;
+
+export const ButtonContainer = styled.div`
+    width: 100%;
+    min-heigh: 5rem;
+    heigh: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+
+
+export const LinkButton = styled(Link)`
+    padding: 1rem;
+    border-radius: 1rem;
     margin: .5rem;
+    text-align: center;
+    display: flex;
+    
+    &:hover{
+    }
+    
+    .icon1{
+        margin: 0 auto;
+        font-size: 2.7rem;
+        color: var(--color2);
+        transition: .5s;
+        filter: drop-shadow(0 0 0 #fff);
+        color: #d5fafe;
+        
+        &:hover{
+            filter: drop-shadow(0 0 2rem  #d5fafe);
+            color: var(--color2);
+            transform: scale(1.4);
+        }
+    }
+    .icon2{
+        margin: 0 auto;
+        font-size: 2rem;
+        color: #d5fafe;
+        transition: .5s;
+        filter: drop-shadow(0 0 0 #fff);
+        
+        &:hover{
+            color: var(--color2);
+            filter: drop-shadow(0 0 3rem  #d5fafe);
+            transform: scale(1.4);
+        }
+    }
+    
 `;
