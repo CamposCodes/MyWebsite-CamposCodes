@@ -23,10 +23,12 @@ export const TextArea = styled.div`
     height: auto;
     margin: .5rem 0;
     margin-top: 2rem;
-    background-color: rgba(255, 255, 255, 0.24);
-    backdrop-filter: blur(15px) ;
-    -webkit-backdrop-filter: blur(15px) ;
-    box-shadow: 5px 3px 50px 3px #000;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 0, 0,0, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-radius: 1rem;
 `;
 export const TextArea2 = styled.div`

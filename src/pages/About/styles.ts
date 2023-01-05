@@ -8,7 +8,6 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
-    background: var(--color4);
     margin: auto;
 `;
 export const Area = styled.div`
@@ -19,11 +18,11 @@ export const Area = styled.div`
     .icon{
         margin: 1rem .5rem;
         font-size: 2rem;
-        color: var(--color2);
+        color: var(--c3);
         transition: .5s;
         
         &:hover{
-            color: var(--color3);
+            color: var(--c2);
             transform: scale(1.50);
         }
     }
@@ -31,15 +30,18 @@ export const Area = styled.div`
 export const Title = styled.h1`
     margin: 1rem 1rem;
     width: 90%;
-    justify-content: flex-start;
-    color: #fff;
-`;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--c2);
+    
+    `;
 export const SubTitle = styled.h2`
     margin: .5rem;
-    color: var(--color2);
+    color: var(--c3);
 
     &:hover{
-        color: var(--color3);
+        color: var(--c2);
     }
 `;
 
@@ -47,4 +49,11 @@ export const Link = styled.a`
     display: flex;
     align-items: center;
     text-decoration: none;
+`;
+
+export const Flex = styled.div`
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
 `;

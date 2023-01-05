@@ -2,22 +2,29 @@ import * as C from './styles';
 import Theme from '../../components/Theme';
 import profile from '../../assets/profile.png';
 import { DiReact,DiJsBadge,DiGitBranch } from "react-icons/di";
+import { SiTypescript } from "react-icons/si";
+import {motion} from 'framer-motion';
 
 const Home = () => {
 
     return (
         <Theme>
+        <motion.div
+            initial={{width: 0}}
+            animate={{width: "100%"}}
+            exit={{x: window.innerWidth, transition:{duration: 0.1}}}
+        >
             <C.Container>
                 <C.TextArea>
                     <C.Image src={profile}></C.Image>
                     <C.Text>
-                        <C.Title>Sobre Mim</C.Title>
-                        Me chamo Gabriel Campos, atualmente curso Sistemas de Informação na UFJF (Universidade Federal de Juiz de Fora) e busco minha primeira oportunidade profissional como desenvolvedor Front-end.
+                        <C.Title>About me</C.Title>
+                        My name is Gabriel Campos, currently studying Information Systems at UFJF (Federal University of Juiz de Fora) and looking for my first professional opportunity as a Front-end developer.
                     </C.Text>
                 </C.TextArea>
                 <C.TextArea2>
                     <C.Text2>
-                        <C.SubTitle>Algumas tecnologias com que trabalhos</C.SubTitle>
+                        <C.SubTitle>technologies I work with</C.SubTitle>
                     </C.Text2>
                 </C.TextArea2>
                 <C.ButtonContainer>
@@ -30,13 +37,10 @@ const Home = () => {
                     <C.LinkButton to="/about">
                         <DiGitBranch className="icon1"/>
                     </C.LinkButton> 
+                    <C.LinkButton to="/about">
+                        <SiTypescript className="icon2"/>
+                    </C.LinkButton> 
                 </C.ButtonContainer>
-                <C.TextArea2>
-                    <C.Text2>
-                        <C.Title>Sobre Mim</C.Title>
-                        Me chamo Gabriel Campos, atualmente curso Sistemas de Informação na UFJF (Universidade Federal de Juiz de Fora) e busco minha primeira oportunidade profissional como desenvolvedor Front-end.
-                    </C.Text2>
-                </C.TextArea2>
                 <C.TextArea>
                     <C.Image src={profile}></C.Image>
                     <C.Text>
@@ -44,6 +48,7 @@ const Home = () => {
                     </C.Text>
                 </C.TextArea>
             </C.Container>
+            </motion.div>
         </Theme>
     );
 }

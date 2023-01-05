@@ -99,8 +99,8 @@ export const NavbarLink = styled(Link)`
     }
     
     &:hover{
-        color: #d9d9d9;
-        opacity: 50%;
+        color: var(--c3);
+        opacity: 70%;
         transform: scale(1.3);
     }
 `;

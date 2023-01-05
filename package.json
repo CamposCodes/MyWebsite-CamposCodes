@@ -10,7 +10,7 @@
     "openmobile": "node ./node_modules/openmobile/ip.js"
   },
   "dependencies": {
-    "framer-motion": "^8.0.1",
+    "framer-motion": "^8.1.9",
     "popmotion": "^11.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
