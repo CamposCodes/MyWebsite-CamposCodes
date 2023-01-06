@@ -10,11 +10,12 @@ export const Container = styled.section`
     flex-direction: column;
     margin: 0 auto;
     color: var(--color2);
-
+    position: static;
+    
     @media (min-width: 700px) {
-      height: auto;
+        height: auto;
     }
-`;
+    `;
 
 export const TextArea = styled.div`
     display: flex;
@@ -27,10 +28,9 @@ export const TextArea = styled.div`
     box-shadow: 0 8px 32px 0 rgba( 0, 0,0, 0.37 );
     backdrop-filter: blur( 1.5px );
     -webkit-backdrop-filter: blur( 1.5px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 10px; 
     border-radius: 1rem;
-`;
+    `;
 export const TextArea2 = styled.div`
     display: flex;
     align-items: center;
@@ -46,14 +46,15 @@ export const Text = styled.p`
     margin: 0.5rem;
     font-size: 20px;
     color: #fff;
-`;
+    `;
 export const Text2 = styled.p`
+    position: relative;
     width: 100%;
     text-align: start;
     margin: 0.5rem;
     font-size: 20px;
     color: #d5fafe;
-`;
+    `;
 
 export const Title = styled.h2`
     justify-content: flex-start;

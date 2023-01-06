@@ -9,6 +9,7 @@ export const Container = styled.div`
     align-items: center;
     border-radius: 1rem;
     margin: auto;
+    position: relative;
 `;
 export const Area = styled.div`
     width: 90%;

@@ -22,6 +22,7 @@ export const Container = styled.section`
     color: var(--color2);
     justify-content: center;
     align-items: center;
+    position:relative;
 
 `;
 export const ProjectArea = styled.div`
@@ -64,13 +65,14 @@ export const Title = styled.h1`
     margin: 1rem 0;
     font-size: 5rem;
     color: var(--c5);
+    position:relative;
 `;
 
 export const Top =  styled.div`
     width: 95%;
     display: flex;
     align-items:center;
-
+    
     .icon{
         font-size:5rem;
         color: var(--c1);
@@ -98,4 +100,11 @@ export const Top =  styled.div`
         border-radius: inherit;
     }
 
+`;
+
+export const SubTitle = styled.p`
+    color:var(--c3);
+    text-shadow:1px 1px 2px var(--c5);
+    font-size: x-large;
+    position: inherit;
 `;

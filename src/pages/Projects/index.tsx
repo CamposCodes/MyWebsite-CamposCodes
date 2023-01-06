@@ -18,6 +18,7 @@ const Projects = () => {
                 <C.Top>
                 <motion.div className="container" ref={constraintsRef}>
                     <C.Title>My projects</C.Title>
+                    <C.SubTitle>drag tools</C.SubTitle>
                     <motion.div className="item" drag dragConstraints={constraintsRef}>
                         <FiTool className="icon"/>
                     </motion.div>

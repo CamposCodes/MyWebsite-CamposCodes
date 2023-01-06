@@ -2,7 +2,8 @@ import * as C from './styles';
 import Navbar from '../Navbar';
 import { ReactNode } from 'react';
 import Footer from '../Footer';
-import Ball from '../../components/Ball';
+// import Ball from '../../components/Ball';
+import Animation from '../../components/Animation';
 
 type Props = {
     children: ReactNode
@@ -14,6 +15,7 @@ const Theme =  ({children}: Props) => {
             <C.Area>
                 <Navbar/>
                 <C.Page>
+                <Animation/>
                 {/* <Ball/> */}
                     {children}
                 </C.Page>
