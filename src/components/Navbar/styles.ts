@@ -7,8 +7,6 @@ export const NavbarContainer = styled.nav`
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
-    margin-top: 2rem;
-    justify-content: space-around;
     height: ${props => props.extendNavbar ? "100vh" : "5vh"};
 `;
 
@@ -38,12 +36,13 @@ export const LeftContainer = styled.div`
     margin-top: 2rem;
     transition: .5s;
     filter: drop-shadow(0 0 0 #fff);
-    color: #d5fafe;
+    color: var(--blue1);
         
     &:hover{
-        filter: drop-shadow(0 0 .5rem  #d5fafe);
-        color: var(--c2);
+        filter: drop-shadow(0 0 .5rem  var(--wht));
+        color: var(--blue1);
         transform: scale(1.2);
+        opacity: 60%;
     }
 
     @media (min-width: 700px){
@@ -69,7 +68,7 @@ export const RightContainer = styled.div`
     `;
 
 export const MidContainer = styled.div`
-    flex: 60%;         
+    flex: 80%;         
     justify-content: space-around;
     align-items: center;
     
@@ -86,7 +85,7 @@ export const NavbarLinkContainer = styled.div`
 `;
 
 export const NavbarLink = styled(Link)`
-    color: var(--color2);
+    color: var(--wht);
     font-size: large;
     text-decoration: none;
     margin-left: 1rem;
@@ -99,19 +98,23 @@ export const NavbarLink = styled(Link)`
     }
     
     &:hover{
-        color: var(--c3);
-        opacity: 70%;
-        transform: scale(1.3);
+        color: var(--blue5);
+        opacity: 100%;
+        transform: scale(1.4);
     }
 `;
 
 
 export const Logo = styled.img`
-    width: 5rem;
-    height: 5rem;
-    margin: 2rem;
-    background: var(--color4);
+    width: 4rem;
+    height: 4rem;
+    margin-left: 2rem;
+    margin-top: -1rem;
     padding: .5rem;
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 0, 0,0, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
     border-radius: 0 0 50% 50%;
 
     @media (max-width: 700px){
@@ -125,7 +128,7 @@ export const OpenLinksButton = styled.button`
     height: 2rem;
     background: none;
     border: none;
-    color: var(--color2);
+    color: var(--wht);
     font-size: 3rem;
     margin-top: 1rem;
     cursor: pointer;  
@@ -136,7 +139,7 @@ export const OpenLinksButton = styled.button`
 }
 `;
 export const NavbarLinkExtend = styled(Link)`
-    color: var(--color2);
+    color: var(--blue1);
     font-size: x-large;
     text-decoration: none;
     margin-top: 1rem;

@@ -43,9 +43,6 @@ const Navbar = () => {
                         </C.OpenLinksButton>
                     </C.NavbarLinkContainer>
                 </C.MidContainer>
-                <C.RightContainer>
-                    CamposCodes
-                </C.RightContainer>
             </C.NavbarInnerContainer>
             {extendNavbar && (
                 <motion.nav

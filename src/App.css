@@ -16,16 +16,26 @@
     --bg3:linear-gradient(167deg,rgba(2,35,39,1) 21%, rgba(0,0,0,1)  100%);
     --c1: #000;
     --c2: #FFFF;
-    --c3: #d5fafe;
+    --c3: #e5ebec;
     --c3-3: #d5fafea2;
     --c4: #d9d9d9;
-    --c5: #022327;
+    --c5: #F2F2F2;
     --glass:#ffffff3d;
-
+    --bgN: radial-gradient(circle, rgba(4,36,217,1) 0%, rgba(74,121,217,1) 35%, rgba(82,141,217,1) 60%, rgba(242,242,242,1) 100%);
     /* GLASS EFECT */
     /* backdrop-filter: blur(15px) ;
     -webkit-backdrop-filter: blur(15px) ;
     box-shadow: 5px 3px 50px 3px #000; */
+
+
+    /*CORES*/
+
+    --blue1:#94BDF2;
+    --blue2:#528DD9;
+    --blue3:#4A79D9;
+    --blue4:#0424D9;
+    --blue5:#0424d963;
+    --wht :#F2F2F2;
 
 }
 

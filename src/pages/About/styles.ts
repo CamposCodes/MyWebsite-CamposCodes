@@ -8,53 +8,43 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     border-radius: 1rem;
-    margin: auto;
-    position: relative;
+    justify-content: center;
 `;
 export const Area = styled.div`
-    width: 90%;
-    display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: flex-start;
+
     .icon{
-        margin: 1rem .5rem;
-        font-size: 2rem;
-        color: var(--c3);
+        font-size: 3rem;
+        color: var(--wht);
         transition: .5s;
+        margin-left: 2.5rem;
+        margin-top: 2rem;
         
         &:hover{
-            color: var(--c2);
+            color: var(--blue1);
             transform: scale(1.50);
         }
     }
 `;
 export const Title = styled.h1`
-    margin: 1rem 1rem;
-    width: 90%;
+    margin-top:-25rem;
+    width: 100%;
     display:flex;
     justify-content: center;
     align-items: center;
-    color: var(--c2);
+    color: var(--wht);
+    font-size: 3rem;
     
-    `;
-export const SubTitle = styled.h2`
-    margin: .5rem;
-    color: var(--c3);
-
-    &:hover{
-        color: var(--c2);
-    }
 `;
 
 export const Link = styled.a`
     display: flex;
     align-items: center;
-    text-decoration: none;
 `;
 
 export const Flex = styled.div`
     display: flex;
     justify-content:center;
     align-items:center;
-    flex-direction: column;
 `;

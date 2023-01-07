@@ -13,7 +13,16 @@ const Contact = () => {
             animate={{width: "100%"}}
             exit={{x: window.innerWidth, transition:{duration: 0.1}}}
         >
-            <Form/>
+        <C.Container>
+                <C.TextArea>
+                    <C.Text>
+                        Got a question ? Are you interested in partnering ? Have some suggestion or just want to say hi? Contact me 
+                    </C.Text>
+                </C.TextArea>
+                <C.FormArea>
+                    <Form/>
+                </C.FormArea>
+        </C.Container>
         </motion.div>
         </Theme>
     );

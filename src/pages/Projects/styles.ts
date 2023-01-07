@@ -26,9 +26,9 @@ export const Container = styled.section`
 
 `;
 export const ProjectArea = styled.div`
-    background: var(--c1);
-    backdrop-filter: blur(15px) ;
-    -webkit-backdrop-filter: blur(15px) ;
+    background: rgba( 255, 255, 255, 0.25 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
 
     border-radius: 2rem;
     justify-content: center;
@@ -38,7 +38,7 @@ export const ProjectArea = styled.div`
     object-fit: contain;
 
     &:hover{
-        filter: drop-shadow(0 0 .5rem  var(--c3));
+        background: var(--blue1);
     }
     
     @media (max-width: 700px) {
@@ -53,7 +53,7 @@ export const ProjectContent = styled.p`
     width: 100%;
     height: 100%;
     margin: 0 auto;
-    color: var(--c3);
+    color: var(--wht);
     font-size: 2rem;
     padding: 1rem;
     white-space: nowrap;
@@ -64,8 +64,8 @@ export const Title = styled.h1`
     padding: 1rem;
     margin: 1rem 0;
     font-size: 5rem;
-    color: var(--c5);
-    position:relative;
+    color: var(--wht);
+    position: inherit;
 `;
 
 export const Top =  styled.div`
@@ -75,7 +75,7 @@ export const Top =  styled.div`
     
     .icon{
         font-size:5rem;
-        color: var(--c1);
+        color: var(--blue3);
     }
     .container {
         width: 100%;
@@ -84,9 +84,11 @@ export const Top =  styled.div`
         place-content: center;
         place-items: center;
         overflow: hidden;
-        background: var(--c3);
-        /* background: rgba(255, 255, 255, 0.2); */
-        border-radius: 30px;
+        background: rgba( 255, 255, 255, 0.15 );
+        box-shadow: 0 8px 32px 0 rgba( 0, 0,0, 0.37 );
+        backdrop-filter: blur( 1.5px );
+        -webkit-backdrop-filter: blur( 1.5px );
+        border-radius: 1rem;
         margin: 2rem 0;
     }
 
@@ -103,8 +105,7 @@ export const Top =  styled.div`
 `;
 
 export const SubTitle = styled.p`
-    color:var(--c3);
-    text-shadow:1px 1px 2px var(--c5);
+    color: var(--blue2);
+    text-shadow:1px 1px 1px var(--blue5);
     font-size: x-large;
-    position: inherit;
 `;

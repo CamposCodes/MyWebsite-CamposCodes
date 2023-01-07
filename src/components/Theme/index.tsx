@@ -15,7 +15,7 @@ const Theme =  ({children}: Props) => {
             <C.Area>
                 <Navbar/>
                 <C.Page>
-                <Animation/>
+                
                 {/* <Ball/> */}
                     {children}
                 </C.Page>
