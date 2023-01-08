@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-    width: 100%;
+    min-height: 100vh; 
     height: auto; 
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    margin: 0 auto;
+    flex-direction: column; 
     color: var(--wht);
     
     @media (min-width: 700px) {
@@ -30,12 +30,12 @@ export const TextArea = styled.div`
 export const Text = styled.p`
     width: 50%;
     text-align: center;
-    margin: 0.2rem;
     font-size: 2rem;
     color: var(--wht);
     margin: 3rem .5rem;
 `;
 
 export const FormArea = styled.div`
-
+    margin: 0;
+    padding: 0;
 `;

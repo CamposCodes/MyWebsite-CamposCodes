@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     min-height: 100vh;
+    min-width:100%;
     background: var(--bgN);
     color: var(--wht);
     margin: 0;
@@ -21,5 +22,5 @@ export const Page = styled.div`
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 1rem .5rem;
+    padding: .5rem .5rem;
 `;

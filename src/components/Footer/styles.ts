@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 
 export const Container = styled.div`
     width: 100%;
-    heigh: 4vh;
     display: flex;
     justify-content: space-between;
-    position: relative;
 `;
 
 export const Name = styled.p`

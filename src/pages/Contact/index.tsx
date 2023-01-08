@@ -6,6 +6,9 @@ import Form from '../../components/Form';
 const Contact = () => {
 
 
+    const Open = () => { 
+        window.scrollTo(0, 0);
+    };
     return(
         <Theme>
         <motion.div
@@ -13,7 +16,7 @@ const Contact = () => {
             animate={{width: "100%"}}
             exit={{x: window.innerWidth, transition:{duration: 0.1}}}
         >
-        <C.Container>
+        <C.Container onFocus={Open}>
                 <C.TextArea>
                     <C.Text>
                         Got a question ? Are you interested in partnering ? Have some suggestion or just want to say hi? Contact me 

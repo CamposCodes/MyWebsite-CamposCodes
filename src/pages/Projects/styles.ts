@@ -9,6 +9,7 @@ export const ContainerGrid = styled.section`
     grid-template-rows: repeat(5, 1fr);
     color: var(--wht);
 
+
     @media (max-width: 700px) {
         height: auto;
         grid-template-columns: repeat(1, 1fr);
