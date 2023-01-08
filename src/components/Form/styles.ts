@@ -81,3 +81,17 @@ export const Form = styled.form`
         outline: 0;
     }
 `;
+
+export const Button = styled.button`
+    text-align: flex-end;
+    margin-top: 1rem;
+    padding-left: 18rem;
+    border: none;
+    background: transparent;
+    font-size: 1.5rem;
+    color: var(--wht);
+    &:hover{
+        color:var(--blue1);
+        cursor: pointer;
+    }
+`;

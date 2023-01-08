@@ -57,7 +57,7 @@ export const ProjectContent = styled.p`
     font-size: 2rem;
     padding: 1rem;
     white-space: nowrap;
-
+    
     &:hover{
         opacity: 80%;
     }
