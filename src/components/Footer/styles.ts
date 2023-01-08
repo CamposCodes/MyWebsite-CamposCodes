@@ -7,17 +7,8 @@ export const Container = styled.div`
     justify-content: space-between;
 `;
 
-export const Name = styled.p`
-    margin-left: 1rem;
-    font-size: 1rem;
-    margin-top: 1.5rem;
-    transition: .5s;
-
-    &:hover{
-        color: var(--blue5);
-
-    }
-    
+export const BackToTop = styled.div`
+    margin-top: .2rem;
 `;
 export const Redes = styled.div`
     display: flex;
@@ -41,7 +32,7 @@ export const Logo = styled.img`
     width: 4rem;
     heigh: 4rem;
     margin-right: 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: .6rem;
     transition: .5s;
     
     &:hover{
@@ -56,7 +47,7 @@ export const LinksContainer = styled.div`
 `; 
 export const LinkTo = styled(Link)`
     margin-left: 1rem;
-    margin-bottom: .5rem;
+    margin-bottom: .6rem;
     font-size: 1rem;
     transition: .5s;
     

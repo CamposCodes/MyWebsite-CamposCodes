@@ -2,9 +2,8 @@ import * as C from './styles';
 import Navbar from '../Navbar';
 import { ReactNode } from 'react';
 import Footer from '../Footer';
-// import Ball from '../../components/Ball';
-import Animation from '../../components/Animation';
 import ScrollBar from '../ScrollBar';
+
 
 type Props = {
     children: ReactNode

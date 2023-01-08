@@ -1,11 +1,12 @@
 import * as C from "./styles";
 import ImageLogo from '../../assets/2.png';
-import {BsGithub,BsGoogle,BsLinkedin,BsFacebook,BsInstagram} from 'react-icons/bs';
+import {BsGithub,BsLinkedin,BsFacebook,BsInstagram} from 'react-icons/bs';
+import ButtonToTop from '../ButtonToTop';
 
 const Footer = () => {
     return(
         <C.Container>
-            <C.Name>Gabriel Campos Lima Alves</C.Name>
+            <C.BackToTop><ButtonToTop/></C.BackToTop>
             <C.Redes>
                 <BsGithub className="icon"/>
                 <BsLinkedin className="icon"/>
