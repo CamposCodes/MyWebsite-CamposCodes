@@ -7,7 +7,7 @@ export const ContainerGrid = styled.section`
     gap: 20px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    color: var(--color2);
+    color: var(--wht);
 
     @media (max-width: 700px) {
         height: auto;
@@ -19,7 +19,7 @@ export const Container = styled.section`
     display: flex;
     width: 100%;
     flex-direction: column;
-    color: var(--color2);
+    color: var(--wht);
     justify-content: center;
     align-items: center;
     position:relative;
@@ -57,6 +57,10 @@ export const ProjectContent = styled.p`
     font-size: 2rem;
     padding: 1rem;
     white-space: nowrap;
+
+    &:hover{
+        opacity: 80%;
+    }
 `;
 
 export const Title = styled.h1`

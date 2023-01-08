@@ -10,9 +10,10 @@ export const Container = styled.div`
 
 export const Area = styled.div`
     margin: auto;
-    max-width: 100vw;
-    min-width: 99vw;
+    max-width: 100%;
+    min-width: 100%;
     min-height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
 `;

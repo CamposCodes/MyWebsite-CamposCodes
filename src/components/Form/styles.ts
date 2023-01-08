@@ -28,6 +28,7 @@ export const Form = styled.form`
         margin-top: 1.5rem;
         font-size: 1rem;
         font-weight: normal;
+        color: var(--wht);
     }
     input{
         margin-top: .5rem;
@@ -37,13 +38,20 @@ export const Form = styled.form`
         border-radius: .5rem;
         border: none;
         background: transparent;
-        box-shadow: 0 8px 32px 0 rgba( 0, 0,0, 0.97 );
-        color: #ffff;
+        box-shadow: 0 8px 32px 0 rgba( 0, 0,0, 0.40 );
+        color: var(--blue1);
         opacity: 20%;
+        font-size: 1.1rem;
+        text-align: center;
+
         
         
         &::placeholder{
-            padding-left: 1rem;
+            padding: .5rem;
+            color: var(--c4);
+            text-align: center;
+            padding-top: 1rem;
+            font-size: .8rem;
         }
     }
     textarea{
@@ -54,14 +62,18 @@ export const Form = styled.form`
         border: none;
         background: transparent;
         opacity: 20%;
-        box-shadow: 0 8px 32px 0 rgba( 0, 0,0, 0.97 );
-        color: #fff;
+        box-shadow: 0 8px 32px 0 rgba( 0, 0,0, 0.40 );
+        color: var(--blue1);
+        text-align: center;
+        font-size: 1.1rem;
+        
 
         &::placeholder{
             padding: .5rem;
             color: var(--c4);
             text-align: center;
             padding-top: 1rem;
+            font-size: .8rem;
         }
     }
     textarea:focus, input:focus {

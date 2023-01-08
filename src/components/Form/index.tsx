@@ -7,11 +7,11 @@ const Form = () => {
         <C.Form>
           <label>
             Your name
-            <input type="text" autoFocus/>
+            <input placeholder="Name" type="text" autoFocus/>
           </label>
           <label>
             Your e-mail
-            <input type="email" autoFocus/>
+            <input placeholder="E-mail" type="email" autoFocus/>
           </label>
           <label>
             Message

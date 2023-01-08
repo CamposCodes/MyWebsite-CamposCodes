@@ -1,258 +1,129 @@
-import {motion} from 'framer-motion';
 import * as C from './styles';
-
-
-const Lines = () => {
-    return(
-        <div className="line">
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-            <C.Lines>0</C.Lines>
-            <C.Lines>1</C.Lines>
-        </div>
-    );
-}
-
-const BiLine1 = () => {
-    const Animate = {
-        variantA: {opacity: 1, x: -100, y: 5},
-        variantB: {opacity: .7, x: 500, y: 5}
-    };
-
-    return(
-        <motion.div 
-        className="animate"
-        variants={Animate}
-        initial="variantA"
-        animate="variantB"
-        transition={{
-            type: "spring",
-            stiffness: 100,
-            damping: 0,
-            duration: 1,
-        }}><Lines/></motion.div>    
-    );
-}
-const BiLine2 = () => {
-    const Animate = {
-        variantA: {opacity: 1, x: -100, y: 5},
-        variantB: {opacity: .6, x: 500, y: 5}
-    };
-
-    return(
-        <motion.div 
-        className="animate"
-        variants={Animate}
-        initial="variantA"
-        animate="variantB"
-        transition={{
-            type: "spring",
-            stiffness: 100,
-            damping: 0,
-            duration: 1,
-            delay: .2
-        }}><Lines/></motion.div>    
-    );
-}
-const BiLine3 = () => {
-    const Animate = {
-        variantA: {opacity: 1, x: -100, y: 5},
-        variantB: {opacity: .5, x: 500, y: 5}
-    };
-
-    return(
-        <motion.div 
-        className="animate"
-        variants={Animate}
-        initial="variantA"
-        animate="variantB"
-        transition={{
-            type: "spring",
-            stiffness: 100,
-            damping: 0,
-            duration: 1,
-            delay: .1,
-        }}><Lines/></motion.div>    
-    );
-}
+import { motion } from 'framer-motion';
+import {BsGithub,BsGoogle,BsLinkedin,BsFacebook,BsInstagram} from 'react-icons/bs';
 
 const Animation = () => {
-    
-    
+
+    const Animate = {
+        variantA : {left: 0,x: 0, y:0},
+        variantB : {left: 0,x: -100, y:-100},
+        variantC : {left: 0,x: -50, y:-250},
+        variantD : {left: 0,x: -150, y:30},
+        variantE : {left: 0,x: 50, y:30},
+        variantF : {left: 0,x: -50, y: -250},
+        variantG : {left: 0,x: 90, y: -100},
+    }
+
     return(
         <C.Container>
             <C.Area>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
-                <BiLine3/>
-                <BiLine1/>
-                <BiLine2/>
-                <BiLine3/>
+                <C.Balls>
+                <motion.div
+                variants={Animate}
+                initial="variantA"
+                animate="variantB"
+                transition={{
+                    type: "spring",
+                    stiffness: 2,
+                    damping: 4,
+                    mass: 10,
+                }}
+                >
+                    <C.Ball>
+                        <C.Link target="_blank" href="https://github.com/CamposCodes">
+                            <BsGithub className="icon" />
+                        </C.Link>
+                    </C.Ball>
+                </motion.div>
+                <motion.div
+                variants={Animate}
+                initial="variantA"
+                animate="variantC"
+                transition={{
+                    type: "spring",
+                    stiffness: 2,
+                    damping: 4,
+                    mass: 10,
+                }}
+                >
+                    <C.Ball>
+                       <C.Link target="_blank" href="https://www.linkedin.com/in/gabriel-campos-lima-alves-947554249/">
+                            <BsLinkedin className="icon" />
+                        </C.Link>
+                    </C.Ball>
+                </motion.div>
+                <motion.div
+                variants={Animate}
+                initial="variantA"
+                animate="variantD"
+                transition={{
+                    type: "spring",
+                    stiffness: 2,
+                    damping: 4,
+                    mass: 10,
+                }}
+                >
+                    <C.Ball>
+                        <C.Link target="_blank" href="https://www.instagram.com/dev.camposg/">
+                            <BsInstagram className="icon" />
+                        </C.Link>
+                    </C.Ball>
+                </motion.div>
+                <motion.div
+                variants={Animate}
+                initial="variantA"
+                animate="variantE"
+                transition={{
+                    type: "spring",
+                    stiffness: 2,
+                    damping: 4,
+                    mass: 10,
+                }}
+                >
+                    <C.Ball>
+                        <C.Link target="_blank" href="https://www.facebook.com/people/Dev-Campos/100085400052572/">
+                            <BsFacebook className="icon" />
+                        </C.Link>
+                    </C.Ball>
+                </motion.div>
+                <motion.div
+                variants={Animate}
+                initial="variantA"
+                animate="variantF"
+                transition={{
+                    type: "spring",
+                    stiffness: 2,
+                    damping: 4,
+                    mass: 10,
+                }}
+                >
+                    <C.Ball>
+                        <C.Link target="_blank" href="">
+                            <BsGoogle className="icon" />
+                        </C.Link>
+                    </C.Ball>
+                </motion.div>
+                <motion.div
+                variants={Animate}
+                initial="variantA"
+                animate="variantG"
+                transition={{
+                    type: "spring",
+                    stiffness: 2,
+                    damping: 4,
+                    mass: 10,
+                }}
+                >
+                    <C.Ball>
+                        <C.Link target="_blank" href="https://www.linkedin.com/in/gabriel-campos-lima-alves-947554249/">
+                            <BsLinkedin className="icon" />
+                        </C.Link>
+                    </C.Ball>
+                </motion.div>
+                </C.Balls>
             </C.Area>
         </C.Container>
     );
 }
-
 
 export default Animation;

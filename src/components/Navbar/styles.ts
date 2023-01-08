@@ -86,7 +86,7 @@ export const NavbarLinkContainer = styled.div`
 
 export const NavbarLink = styled(Link)`
     color: var(--wht);
-    font-size: large;
+    font-size: 1.2rem;
     text-decoration: none;
     margin-left: 1rem;
     padding: 1rem;

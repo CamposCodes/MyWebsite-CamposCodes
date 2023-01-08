@@ -1,5 +1,56 @@
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
+
+export const ButtonContainer = styled.div`
+    min-width: 100%;
+    heigh: 100rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
+
+
+export const LinkButton = styled(Link)`
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: .5rem;
+    text-align: center;
+    display: flex;
+    
+    &:hover{
+    }
+    
+    .icon1{
+        margin: 0 auto;
+        font-size: 2.7rem;
+        color: var(--wht);
+        transition: .5s;
+        filter: drop-shadow(0 0 0 var(--wht));
+        color: var(--blue1);
+        
+        &:hover{
+            filter: drop-shadow(0 0 2rem  var(--blue1));
+            color: var(--wht);
+            transform: scale(1.4);
+        }
+    }
+    .icon2{
+        margin: 0 auto;
+        font-size: 2rem;
+        color: var(--blue1);
+        transition: .5s;
+        filter: drop-shadow(0 0 0 var(--wht));
+        
+        &:hover{
+            color: var(--wht);
+            filter: drop-shadow(0 0 3rem  var(--blue1));
+            transform: scale(1.4);
+        }
+    }
+    
+`;
+
 
 export const Container = styled.section`
     width: 95%;
@@ -68,58 +119,9 @@ export const SubTitle = styled.h2`
 `;
 
 export const Image = styled.img`
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem .5rem;
     justify-content: flex-start;
 `;
 
-export const ButtonContainer = styled.div`
-    width: 100%;
-    min-heigh: 5rem;
-    heigh: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`;
-
-
-
-export const LinkButton = styled(Link)`
-    padding: 1rem;
-    border-radius: 1rem;
-    margin: .5rem;
-    text-align: center;
-    display: flex;
-    
-    &:hover{
-    }
-    
-    .icon1{
-        margin: 0 auto;
-        font-size: 2.7rem;
-        color: var(--wht);
-        transition: .5s;
-        filter: drop-shadow(0 0 0 var(--wht));
-        color: var(--blue1);
-        
-        &:hover{
-            filter: drop-shadow(0 0 2rem  var(--blue1));
-            color: var(--wht);
-            transform: scale(1.4);
-        }
-    }
-    .icon2{
-        margin: 0 auto;
-        font-size: 2rem;
-        color: #d5fafe;
-        transition: .5s;
-        filter: drop-shadow(0 0 0 var(--wht));
-        
-        &:hover{
-            color: var(--color2);
-            filter: drop-shadow(0 0 3rem  var(--blue1));
-            transform: scale(1.4);
-        }
-    }
-    
-`;

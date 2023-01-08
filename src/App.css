@@ -1,32 +1,9 @@
 :root{
-    --color1:#FFF;
-    --color2:#FFF;
-    --color3:#FFF;
-    --color4:#D9D9DD;
-    --color5:#000;
-    /* --color1:#68B684;
-    --color2:#C3F73A;
-    --color3:#95E06C;
-    --color4:#094D92;
-    --color5:#202C39; */
-    
     /* NOVAS CORES  */
-    --bg:linear-gradient(167deg, rgba(0,0,0,1) 71%, rgba(2,35,39,1) 100%);
-    --bg2:linear-gradient(90deg, rgba(190,190,190,1) 0%, rgba(213,250,254,1) 100%);
-    --bg3:linear-gradient(167deg,rgba(2,35,39,1) 21%, rgba(0,0,0,1)  100%);
-    --c1: #000;
-    --c2: #FFFF;
-    --c3: #e5ebec;
-    --c3-3: #d5fafea2;
-    --c4: #d9d9d9;
-    --c5: #F2F2F2;
     --glass:#ffffff3d;
+    
+    /* --bgN: radial-gradient(circle, rgba(3,27,162,1) 0%, rgba(72,114,200,1) 35%, rgba(70,120,185,1) 60%, rgba(232,232,232,1) 100%); */
     --bgN: radial-gradient(circle, rgba(4,36,217,1) 0%, rgba(74,121,217,1) 35%, rgba(82,141,217,1) 60%, rgba(242,242,242,1) 100%);
-    /* GLASS EFECT */
-    /* backdrop-filter: blur(15px) ;
-    -webkit-backdrop-filter: blur(15px) ;
-    box-shadow: 5px 3px 50px 3px #000; */
-
 
     /*CORES*/
 
@@ -71,15 +48,15 @@ body::-webkit-scrollbar {
 }
 body::-webkit-scrollbar-track {
     border-radius: 1rem;
-    background-color: var(--c1);
+    background-color: var(--blue1);
 }
 body::-webkit-scrollbar-thumb {
-    border: 1px solid var(--c3);
+    border: 1px solid var(--blue5);
     border-radius: 1rem;
 }
 body::-webkit-scrollbar-thumb:hover{
     background: var(--c3-3);
-    filter: drop-shadow(0 0 10rem #d5fafe);
+    filter: drop-shadow(0 0 10rem var(--blue1));
 }
 
 @font-face {

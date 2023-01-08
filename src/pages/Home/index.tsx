@@ -1,11 +1,12 @@
 import * as C from './styles';
 import Theme from '../../components/Theme';
 import profile from '../../assets/profile.png';
+import {motion} from 'framer-motion';
 import { DiReact,DiJsBadge,DiGitBranch } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
-import {motion} from 'framer-motion';
 
 const Home = () => {
+
 
     return (
         <Theme>
@@ -22,6 +23,12 @@ const Home = () => {
                         My name is Gabriel Campos, currently studying Information Systems at UFJF (Federal University of Juiz de Fora) and looking for my first professional opportunity as a Front-end developer.
                     </C.Text>
                 </C.TextArea>
+                <C.TextArea2>
+                    <C.Text>
+                        My name is Gabriel Campos, currently studying Information Systems at UFJF (Federal University of Juiz de Fora) and looking for my first professional opportunity as a Front-end developer.
+                        My name is Gabriel Campos, currently studying Information Systems at UFJF (Federal University of Juiz de Fora) and looking for my first professional opportunity as a Front-end developer.
+                    </C.Text>
+                </C.TextArea2>
                 <C.TextArea2>
                     <C.Text2>
                         <C.SubTitle>technologies I work with</C.SubTitle>

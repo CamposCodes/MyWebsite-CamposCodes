@@ -7,7 +7,6 @@ export const Container = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 1rem;
     justify-content: center;
 `;
 export const Area = styled.div`
@@ -28,7 +27,6 @@ export const Area = styled.div`
     }
 `;
 export const Title = styled.h1`
-    margin-top:-25rem;
     width: 100%;
     display:flex;
     justify-content: center;
@@ -38,13 +36,10 @@ export const Title = styled.h1`
     
 `;
 
-export const Link = styled.a`
-    display: flex;
-    align-items: center;
-`;
 
-export const Flex = styled.div`
+export const Info = styled.div`
     display: flex;
-    justify-content:center;
-    align-items:center;
+    height: auto;
+    align-items: center;
+    justify-content: center;
 `;

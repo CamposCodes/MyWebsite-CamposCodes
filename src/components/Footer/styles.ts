@@ -16,8 +16,8 @@ export const Name = styled.p`
     transition: .5s;
 
     &:hover{
-        color: #d9d9d9;
-        opacity: 50%;
+        color: var(--blue5);
+
     }
     
 `;
@@ -34,8 +34,8 @@ export const Redes = styled.div`
 
         &:hover{
             transform: scale(1.2);
-            color: #d9d9d9;
-            opacity: 50%;
+            color: var(--blue5);
+
         }
     }
 `;
@@ -64,7 +64,7 @@ export const LinkTo = styled(Link)`
     
     &:hover{
         transform: scale(1.2);
-        color: #d9d9d9;
-        opacity: 50%;
+        color: var(--blue1);
+
     }
 `; 
