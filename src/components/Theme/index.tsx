@@ -4,13 +4,14 @@ import { ReactNode } from 'react';
 import Footer from '../Footer';
 import ScrollBar from '../ScrollBar';
 
-
 type Props = {
     children: ReactNode
 }
 
 const Theme =  ({children}: Props) => {
+
     return(
+ 
         <C.Container>
             <C.Area>
                 <ScrollBar/>
@@ -23,6 +24,7 @@ const Theme =  ({children}: Props) => {
                 <Footer/>
             </C.Area>
         </C.Container>
+
     );
 }
 

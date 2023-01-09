@@ -36,8 +36,8 @@ const Navbar = () => {
                     <C.NavbarLinkContainer>
                         <C.NavbarLink to="/">Home</C.NavbarLink>
                         <C.NavbarLink to="/projects">Projects</C.NavbarLink>
-                        <C.NavbarLink to="/contact">Contact us</C.NavbarLink>
-                        <C.NavbarLink to="/about">About us</C.NavbarLink>
+                        <C.NavbarLink to="/contact">Contact</C.NavbarLink>
+                        <C.NavbarLink to="/about">About</C.NavbarLink>
                         <C.OpenLinksButton onClick = {changeNavbar}>
                             {extendNavbar ? <MdClose/> : <MdMenu />}    
                         </C.OpenLinksButton>
@@ -54,8 +54,8 @@ const Navbar = () => {
                 <C.NavbarExtendedContainer>
                         <C.NavbarLinkExtend onClick={changeNavbar} to="/">Home</C.NavbarLinkExtend>
                         <C.NavbarLinkExtend onClick={changeNavbar} to="/projects">Projects</C.NavbarLinkExtend>
-                        <C.NavbarLinkExtend onClick={changeNavbar} to="/contact">Contact us</C.NavbarLinkExtend>
-                        <C.NavbarLinkExtend onClick={changeNavbar} to="/about">About us</C.NavbarLinkExtend>
+                        <C.NavbarLinkExtend onClick={changeNavbar} to="/contact">Contact</C.NavbarLinkExtend>
+                        <C.NavbarLinkExtend onClick={changeNavbar} to="/about">About</C.NavbarLinkExtend>
                 </C.NavbarExtendedContainer>
                 </motion.nav>
 

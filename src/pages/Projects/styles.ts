@@ -5,8 +5,8 @@ export const ContainerGrid = styled.section`
     box-sizing: border-box;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     color: var(--wht);
 
 
@@ -24,7 +24,6 @@ export const Container = styled.section`
     justify-content: center;
     align-items: center;
     position:relative;
-
 `;
 export const ProjectArea = styled.div`
     background: rgba( 255, 255, 255, 0.25 );
@@ -34,9 +33,10 @@ export const ProjectArea = styled.div`
     border-radius: 2rem;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    min-width: 100%;
     height: 200px;
     object-fit: contain;
+
 
     &:hover{
         background: var(--blue1);
@@ -57,7 +57,7 @@ export const ProjectContent = styled.p`
     color: var(--wht);
     font-size: 2rem;
     padding: 1rem;
-    white-space: nowrap;
+    word-wrap: break-word;
     
     &:hover{
         opacity: 80%;
