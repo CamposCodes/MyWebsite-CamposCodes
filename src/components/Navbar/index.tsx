@@ -2,7 +2,7 @@ import * as C from './styles';
 import {MdMenu,MdClose} from 'react-icons/md';
 import React, {useState} from 'react';
 import { motion } from 'framer-motion';
-import LogoImage1 from '../../assets/1.png';
+import LogoImage1 from '../../assets/11.png';
 
 
 const Navbar = () => {

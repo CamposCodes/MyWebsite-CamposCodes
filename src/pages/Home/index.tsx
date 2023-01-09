@@ -1,9 +1,13 @@
 import * as C from './styles';
 import Theme from '../../components/Theme';
+
 import profile from '../../assets/profile.png';
+
 import {motion} from 'framer-motion';
+
 import { DiReact,DiJsBadge,DiGitBranch } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
+
 
 const Home = () => {
 
@@ -11,9 +15,10 @@ const Home = () => {
     return (
         <Theme>
         <motion.div
+            onViewportEnter={()=>window.scrollTo(0, 0)}
             initial={{width: 0}}
             animate={{width: "100%"}}
-            exit={{x: window.innerWidth, transition:{duration: 0.1}}}
+            exit={{x: window.innerWidth, transition:{duration: 0.5}}}
         >
             <C.Container>
                 <C.TextArea>
@@ -23,12 +28,6 @@ const Home = () => {
                         My name is Gabriel Campos, currently studying Information Systems at UFJF (Federal University of Juiz de Fora) and looking for my first professional opportunity as a Front-end developer.
                     </C.Text>
                 </C.TextArea>
-                <C.TextArea2>
-                    <C.Text>
-                        My name is Gabriel Campos, currently studying Information Systems at UFJF (Federal University of Juiz de Fora) and looking for my first professional opportunity as a Front-end developer.
-                        My name is Gabriel Campos, currently studying Information Systems at UFJF (Federal University of Juiz de Fora) and looking for my first professional opportunity as a Front-end developer.
-                    </C.Text>
-                </C.TextArea2>
                 <C.TextArea2>
                     <C.Text2>
                         <C.SubTitle>technologies I work with</C.SubTitle>
@@ -54,6 +53,23 @@ const Home = () => {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </C.Text>
                 </C.TextArea>
+                <C.TextArea3>
+                    <C.Text>
+                        <C.Title2>More</C.Title2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </C.Text>
+                    <C.Text>
+                        <C.Title2>More</C.Title2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s
+                    </C.Text>
+                </C.TextArea3>
+                <C.TextArea4>
+                    <C.Text>
+                        <C.Title2>More</C.Title2>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s
+                    </C.Text>
+                </C.TextArea4>
             </C.Container>
             </motion.div>
         </Theme>

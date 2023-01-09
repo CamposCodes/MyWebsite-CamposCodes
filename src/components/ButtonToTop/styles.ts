@@ -8,16 +8,19 @@ export const Container = styled.div`
     justify-content: center;
 
     button{
+        text-shadow: 1px 1px 25px var(--blue1);
         margin:1rem;
         padding: .5rem 1rem;
-        background: var(--blue1);
+        background: transparent;
         color: var(--wht);
-        font-size:.8rem;
+        font-size: 1rem;
         border: none;
         border-radius: 1rem;
+        transition: .5s;
 
         &:hover{
-            background: var(--blue5);
+            transform: scale(1.2);
+            color: var(--blue2);
             cursor: pointer;
         }
     }

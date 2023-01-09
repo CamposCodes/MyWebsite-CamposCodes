@@ -1,5 +1,5 @@
 import * as C from "./styles";
-import ImageLogo from '../../assets/2.png';
+import ImageLogo from '../../assets/11.png';
 import {BsGithub,BsLinkedin,BsFacebook,BsInstagram} from 'react-icons/bs';
 import ButtonToTop from '../ButtonToTop';
 

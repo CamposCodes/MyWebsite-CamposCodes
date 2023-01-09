@@ -5,14 +5,16 @@ import { useRef } from "react";
 import { FiTool } from "react-icons/fi";
 
 const Projects = () => {
+    
     const constraintsRef = useRef(null);
 
     return(
         <Theme>
         <motion.div
+            onViewportEnter={()=>window.scrollTo(0, 0)}
             initial={{width: 0}}
             animate={{width: "100%"}}
-            exit={{x: window.innerWidth, transition:{duration: 0.4}}}
+            exit={{x: window.innerWidth, transition:{duration: 0.5}}}
         >
             <C.Container>
                 <C.Top>

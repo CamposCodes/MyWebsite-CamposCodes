@@ -4,12 +4,14 @@ import {motion} from 'framer-motion';
 import Animation from '../../components/Animation';
 
 const About = () => {
+
     return (
     <Theme>
         <motion.div
+            onViewportEnter={()=>window.scrollTo(0, 0)}
             initial={{width: 0}}
             animate={{width: "100%"}}
-            exit={{x: window.innerWidth, transition:{duration: 0.1}}}
+            exit={{x: window.innerWidth, transition:{duration: 0.5}}}
             >
         <C.Container>
             <C.Title>How to reach me</C.Title>

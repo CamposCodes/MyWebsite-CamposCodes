@@ -86,8 +86,26 @@ export const TextArea2 = styled.div`
     align-items: center;
     width: 100%;
     height: auto;
+    margin-top: 2rem;
+`;
+export const TextArea3 = styled.div`
+    width: 100%;
+    height: auto;
     margin: .5rem 0;
     margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+`;
+export const TextArea4 = styled.div`
+    width: 100%;
+    height: auto;
+    margin: .5rem 0;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
 `;
 
 export const Text = styled.p`
@@ -103,11 +121,18 @@ export const Text2 = styled.p`
     text-align: start;
     margin: 0.5rem;
     font-size: 20px;
-    color: var(--blue1);
+    color: var(--wht);
 `;
 
 export const Title = styled.h2`
     justify-content: flex-start;
+    font-weight: normal;
+    width: 100%;
+`;
+export const Title2 = styled.h2`
+    margin: .5rem auto;
+    display: flex;
+    justify-content: center;
     font-weight: normal;
     width: 100%;
 `;

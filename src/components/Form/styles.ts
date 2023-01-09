@@ -83,6 +83,7 @@ export const Form = styled.form`
 `;
 
 export const Button = styled.button`
+    display: flex;
     text-align: flex-end;
     margin-top: 1rem;
     padding-left: 18rem;

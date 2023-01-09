@@ -81,6 +81,9 @@ export const Top =  styled.div`
     .icon{
         font-size:5rem;
         color: var(--blue3);
+        &:hover{
+            cursor:grab;
+        }
     }
     .container {
         width: 100%;
