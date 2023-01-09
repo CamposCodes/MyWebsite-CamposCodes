@@ -21,16 +21,60 @@ const Projects = () => {
                 <motion.div className="container" ref={constraintsRef}>
                     <C.Title>My projects</C.Title>
                     <C.SubTitle>drag tools</C.SubTitle>
-                    <motion.div className="item" drag dragConstraints={constraintsRef}>
+                    <motion.div 
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1, rotate:[50,-50,0]}}
+                    transition={{
+                        type: "spring",
+                        stiffness: 50,
+                        damping: 20,
+                        delay:.2,
+                        duration: 1
+                    }}
+                    className="item" 
+                    drag dragConstraints={constraintsRef}>
                         <FiTool className="icon"/>
                     </motion.div>
-                    <motion.div className="item" drag dragConstraints={constraintsRef}>
+                    <motion.div 
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1, rotate:[50,-50,0]}}
+                    transition={{
+                        type: "spring",
+                        stiffness: 50,
+                        damping: 20,
+                        delay:1.2,
+                        duration: 1
+                    }}
+                    className="item" 
+                    drag dragConstraints={constraintsRef}>
                         <FiTool className="icon"/>
                     </motion.div>
-                    <motion.div className="item" drag dragConstraints={constraintsRef}>
+                    <motion.div 
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1, rotate:[50,-50,0]}}
+                    transition={{
+                        type: "spring",
+                        stiffness: 50,
+                        damping: 20,
+                        delay:2.2,
+                        duration: 1
+                    }}
+                    className="item" 
+                    drag dragConstraints={constraintsRef}>                
                         <FiTool className="icon"/>
                     </motion.div>
-                    <motion.div className="item" drag dragConstraints={constraintsRef}>
+                    <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1, rotate:[50,-50,0]}}
+                    transition={{
+                        type: "spring",
+                        stiffness: 50,
+                        damping: 20,
+                        delay:3.2,
+                        duration: 1
+                    }}
+                    className="item" 
+                    drag dragConstraints={constraintsRef}>                
                         <FiTool className="icon"/>
                     </motion.div>
                 </motion.div>

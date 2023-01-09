@@ -35,18 +35,62 @@ const Home = () => {
                     </C.Text2>
                 </C.TextArea2>
                 <C.ButtonContainer>
-                    <C.LinkButton to="/projects">
-                        <DiReact className="icon1"/>
-                    </C.LinkButton> 
-                    <C.LinkButton to="/contact">
-                        <DiJsBadge className="icon2"/>
-                    </C.LinkButton> 
-                    <C.LinkButton to="/about">
-                        <DiGitBranch className="icon1"/>
-                    </C.LinkButton> 
-                    <C.LinkButton to="/about">
-                        <SiTypescript className="icon2"/>
-                    </C.LinkButton> 
+                    <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: [1,1.3,1.5,1.2], rotateX:[0,20,-20,0]}}
+                    transition={{
+                        type: "spring",
+                        stiffness: 50,
+                        damping: 20,
+                        delay:.2,
+                        duration: 2
+                    }}>
+                        <C.LinkButton to="/projects">
+                            <DiReact className="icon1"/>
+                        </C.LinkButton> 
+                    </motion.div>
+                    <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: [1,1.3,1.5,1], rotateX:[0,20,-20,0]}}
+                    transition={{
+                        type: "spring",
+                        stiffness: 50,
+                        damping: 20,
+                        delay:2.2,
+                        duration: 2
+                    }}> 
+                        <C.LinkButton to="/contact">
+                            <DiJsBadge className="icon2"/>
+                        </C.LinkButton> 
+                    </motion.div>
+                    <motion.div  
+                    initial={{ scale: 0 }}
+                    animate={{ scale: [1,1.3,1.5,1.2], rotateX:[0,20,-20,0]}}
+                    transition={{
+                        type: "spring",
+                        stiffness: 50,
+                        damping: 20,
+                        delay:4.2,
+                        duration: 2
+                    }}> 
+                        <C.LinkButton to="/about">
+                            <DiGitBranch className="icon1"/>
+                        </C.LinkButton> 
+                    </motion.div>
+                    <motion.div
+                    initial={{ scale: 0 }}
+                    animate={{ scale: [1,1.3,1.5,1], rotateX:[0,20,-20,0]}}
+                    transition={{
+                        type: "spring",
+                        stiffness: 50,
+                        damping: 20,
+                        delay:6.2,
+                        duration: 2
+                    }}> 
+                        <C.LinkButton to="/about">
+                            <SiTypescript className="icon2"/>
+                        </C.LinkButton> 
+                    </motion.div>
                 </C.ButtonContainer>
                 <C.TextArea>
                     <C.Image src={profile}></C.Image>

@@ -116,4 +116,6 @@ export const SubTitle = styled.p`
     color: var(--blue2);
     text-shadow:1px 1px 1px var(--blue5);
     font-size: x-large;
+    position: static;
+    margin-top:.7rem;
 `;

@@ -49,6 +49,7 @@ body::-webkit-scrollbar {
 body::-webkit-scrollbar-track {
     border-radius: 1rem;
     background-color: var(--blue1);
+    width: .5rem;
 }
 body::-webkit-scrollbar-thumb {
     border: 1px solid var(--blue5);
