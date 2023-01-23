@@ -35,6 +35,9 @@ html{
     font-family: Campos-b;
 
 }
+::selection {
+    background-color: var(--blue4);
+}
 a{
     color:inherit;
     text-decoration: none;

@@ -4,16 +4,16 @@ export const ContainerGrid = styled.section`
     width: 95%;
     box-sizing: border-box;
     display: grid;
-    gap: 20px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    grid-template-columns: repeat(4, .5fr);
+    grid-template-rows: repeat(4, .5fr);
     color: var(--wht);
 
 
     @media (max-width: 700px) {
         height: auto;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(1, .5fr);
+        grid-template-rows: repeat(1, .5fr);
     }
 `;
 export const Container = styled.section`
@@ -30,7 +30,7 @@ export const ProjectArea = styled.div`
     backdrop-filter: blur( 1.5px );
     -webkit-backdrop-filter: blur( 1.5px );
 
-    border-radius: 2rem;
+    border-radius: 1rem;
     justify-content: center;
     align-items: center;
     min-width: 100%;
@@ -93,7 +93,7 @@ export const Top =  styled.div`
         place-items: center;
         overflow: hidden;
         background: rgba( 255, 255, 255, 0.15 );
-        box-shadow: 0 8px 32px 0 rgba( 0, 0,0, 0.37 );
+        box-shadow: 0 8px 32px 0 rgba( 0, 0,0, 0.20 );
         backdrop-filter: blur( 1.5px );
         -webkit-backdrop-filter: blur( 1.5px );
         border-radius: 1rem;

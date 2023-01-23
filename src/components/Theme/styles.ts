@@ -7,6 +7,7 @@ export const Container = styled.div`
     color: var(--wht);
     margin: 0;
     padding: 0;
+
 `;
 
 export const Area = styled.div`

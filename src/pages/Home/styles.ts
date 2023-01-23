@@ -63,10 +63,11 @@ export const Container = styled.section`
     color: var(--wht);
     position: static;
     
-    @media (min-width: 700px) {
+    @media (max-width: 700px) {
         height: auto;
+        width: 100%;
     }
-    `;
+`;
 
 export const TextArea = styled.div`
     display: flex;
@@ -148,5 +149,6 @@ export const Image = styled.img`
     height: 10rem;
     margin: 1rem .5rem;
     justify-content: flex-start;
+    border-radius: 100%;
 `;
 
